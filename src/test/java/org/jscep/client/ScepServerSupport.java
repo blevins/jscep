@@ -10,7 +10,7 @@ public abstract class ScepServerSupport {
     public URL getUrl() throws Exception {
         final String path = "/scep/pkiclient.exe";
         final ServletHandler handler = new ServletHandler();
-        handler.addServletWithMapping(ScepServletImpl.class, path);
+        //handler.addServletWithMapping(ScepServletImpl.class, path);
         final Server server = new Server(0);
         server.setHandler(handler);
         server.start();

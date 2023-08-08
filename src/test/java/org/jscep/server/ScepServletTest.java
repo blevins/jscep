@@ -127,7 +127,7 @@ public class ScepServletTest {
     @Before
     public void startUp() throws Exception {
         final ServletHandler handler = new ServletHandler();
-        handler.addServletWithMapping(ScepServletImpl.class, PATH);
+        //handler.addServletWithMapping(ScepServletImpl.class, PATH);
 
         server = new Server(0);
         server.setHandler(handler);
